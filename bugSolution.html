@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      myDiv.innerHTML = "<p>This is dynamic content</p>";
+    });
+  </script>
+</body>
+</html>
