@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // This will throw a ReferenceError because 'myDiv' is not in the DOM yet when this script runs.
+    myDiv.innerHTML = "<p>This is dynamic content</p>";
+  </script>
+</body>
+</html>
